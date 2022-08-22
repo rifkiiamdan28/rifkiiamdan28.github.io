@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rifki Amdan Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="cust_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -42,7 +43,7 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Rifki Amdan</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="https://www.linkedin.com/in/rifki-amdan-98b3ba1aa/">Hire me</a>
+                <a href="https://www.linkedin.com/in/rifkiamdan/">Hire me</a>
             </div>
         </div>
     </section>
@@ -111,14 +112,14 @@
                             <span>PHP, Codeigniter</span>
                             <span>99%</span>
                         </div>
-                        <div class="line html"></div>
+                        <div class="line php"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
                             <span>Java Android</span>
                             <span>95%</span>
                         </div>
-                        <div class="line css"></div>
+                        <div class="line java"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
@@ -129,10 +130,10 @@
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>Golang</span>
-                            <span>65%</span>
+                            <span>Dart, Flutter</span>
+                            <span>80%</span>
                         </div>
-                        <div class="line php"></div>
+                        <div class="line dart"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
@@ -156,6 +157,8 @@
                         <img src="images/profile-21.jpeg" alt="">
                         <div class="text">SIG Apps</div>
                         <p>Application of Information System of Scout Member Movement in Tasikmalaya City. to facilitate scout members and managers in scouting activities in Kwatir Tasikmalaya City Branch. (developed personally)</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.amdan.pramukatasik">see in Playstore</a>
+                        <label class="modal-open modal-label" for="modal-open"><p> More </p></label>
                     </div>
                 </div>
                 <div class="card">
@@ -193,12 +196,16 @@
                         <img src="images/profile-82.jpeg" alt="">
                         <div class="text">MoveApp</div>
                         <p>Ojek, Taxi, Courier, and Food Delivery services are made with javascript programming language with react native framework. (Developed with a team)</p> 
-                        <a href="https://apps.apple.com/us/app/move-app/id1504192819">see in Appstore</a>
+                        <a href="https://apps.apple.com/us/app/move-app/id1504192819?platform=iphone">see in Appstore</a>
                     </div>
                 </div>
             </div>
+
         </div>
+
     </section>
+
+                
 
     <!-- contact section start -->
     <section class="contact" id="contact">
@@ -260,10 +267,146 @@
         </div>
     </section>
 
+     <input type="radio" name="modal" value="open" id="modal-open" class="modal-radio">
+        <div class="modal" id="modalku">
+          <label class="modal-label overlay"><input type="radio" name="modal" value="close" class="modal-radio"/></label>
+          <div class="content">
+            <div class="top">
+              <h2>SIG Apps</h2>
+              <label class="modal-label close-btn">
+                <input type="radio" name="modal" value="close" class="modal-radio"/>
+              </label>
+            </div>
+            <p>Application of Information System of Scout Member Movement in Tasikmalaya City. to facilitate scout members and managers in scouting activities in Kwatir Tasikmalaya City Branch.</p>
+          </div>
+        </div>
+
+       <!--    <div class="modal fade bd-example-modal-xl" id="modal-portfolio" tabindex="-1" role="dialog"
+    aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row">
+            <div class="col-xl-6 content-left">
+
+            </div>
+
+            <div class="col-xl-6 content-right">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+    <!-- Portflio -->
+ <!--  <section class="portfolio" id="portfolio">
+    <div class="container p-5">
+      <h2>Portfolio</h2>
+      <div class="row mt-5">
+        <div class="col-md-4 col-sm-6 ">
+          <figure class="figure box-portfolio">
+            <div class="figure-img">
+              <img src="project/cek hefa 1.jpg" class="figure-img img-fluid rounded" alt="...">
+              <a href="" class="d-flex justify-content-center align-items-center toggle-portfolio" data-toggle="modal"
+                data-target="#modal-portfolio" data-id="0">
+                <i class="fa fa-search"></i>
+              </a>
+            </div>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <figure class="figure box-portfolio">
+            <div class="figure-img">
+              <img src="project/jagatubuh.jpg" class="figure-img img-fluid rounded" alt="...">
+              <a href="" class="d-flex justify-content-center toggle-portfolio" data-toggle="modal"
+                data-target="#modal-portfolio" data-id="1"><i class="fa fa-search align-self-center"></i>
+              </a>
+            </div>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <figure class="figure box-portfolio">
+            <div class="figure-img">
+              <img src="project/edupay.jpg" class="figure-img img-fluid rounded" alt="...">
+              <a href="" class="d-flex justify-content-center toggle-portfolio" data-toggle="modal"
+                data-target="#modal-portfolio" data-id="2"><i class="fa fa-search align-self-center"></i></a>
+            </div>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <figure class="figure box-portfolio">
+            <div class="figure-img">
+              <img src="project/moflix banner.jpg" class="figure-img img-fluid rounded" alt="...">
+              <a href="" class="d-flex justify-content-center toggle-portfolio" data-toggle="modal"
+                data-target="#modal-portfolio" data-id="3"><i class="fa fa-search align-self-center"></i></a>
+            </div>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <figure class="figure box-portfolio">
+            <div class="figure-img">
+              <img src="project/laraquotes.jpg" class="figure-img img-fluid rounded" alt="...">
+              <a href="" class="d-flex justify-content-center toggle-portfolio" data-toggle="modal"
+                data-target="#modal-portfolio" data-id="4"><i class="fa fa-search align-self-center"></i></a>
+            </div>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <figure class="figure box-portfolio">
+            <div class="figure-img">
+              <img src="project/kotlin banner.jpg" class="figure-img img-fluid rounded" alt="...">
+              <a href="" class="d-flex justify-content-center toggle-portfolio" data-toggle="modal"
+                data-target="#modal-portfolio" data-id="5"><i class="fa fa-search align-self-center"></i></a>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Akhir Portflio -->
+
+
     <!-- footer section start -->
     <footer>
-        <span>Modified By <a href="https://www.linkedin.com/in/rifki-amdan-98b3ba1aa/">Rifki Amdan</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+        <span>Modified By <a href="https://www.linkedin.com/in/rifkiamdan/">Rifki Amdan</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
     </footer>
+
+
+     <!-- Modal -->
+ <!--  <div class="modal fade bd-example-modal-xl" id="modal-portfolio" tabindex="-1" role="dialog"
+    aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <div class="row">
+            <div class="col-xl-6 content-left">
+
+            </div>
+
+            <div class="col-xl-6 content-right">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
 
     <script src="script.js"></script>
 </body>

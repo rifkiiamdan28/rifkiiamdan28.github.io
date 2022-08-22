@@ -362,17 +362,17 @@ section .title::after{
     top: 0;
     background: crimson;
 }
-.skills-content .right .html::before{
+.skills-content .right .php::before{
     width: 99%;
 }
-.skills-content .right .css::before{
+.skills-content .right .java::before{
     width: 95%;
 }
 .skills-content .right .js::before{
     width: 90%;
 }
-.skills-content .right .php::before{
-    width: 65%;
+.skills-content .right .dart::before{
+    width: 80%;
 }
 .skills-content .right .mysql::before{
     width: 99%;
